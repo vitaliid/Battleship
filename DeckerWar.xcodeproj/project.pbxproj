@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0CA1C71F9123F4002E291D /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CA1C61F9123F4002E291D /* Area.swift */; };
+		FAC4BF6F1F90F6D60008842A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF6E1F90F6D60008842A /* AppDelegate.swift */; };
+		FAC4BF711F90F6D60008842A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF701F90F6D60008842A /* ViewController.swift */; };
+		FAC4BF741F90F6D60008842A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4BF721F90F6D60008842A /* Main.storyboard */; };
+		FAC4BF761F90F6D60008842A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4BF751F90F6D60008842A /* Assets.xcassets */; };
+		FAC4BF791F90F6D60008842A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4BF771F90F6D60008842A /* LaunchScreen.storyboard */; };
+		FAC4BF841F90F6D60008842A /* DeckerWarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF831F90F6D60008842A /* DeckerWarTests.swift */; };
+		FAC4BF8F1F90F6D60008842A /* DeckerWarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF8E1F90F6D60008842A /* DeckerWarUITests.swift */; };
+		FAC4BF9E1F90F8D50008842A /* DeckerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF9D1F90F8D50008842A /* DeckerGenerator.swift */; };
+		FAC4BFA41F90F96B0008842A /* DoubleDecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BF9F1F90F96B0008842A /* DoubleDecker.swift */; };
+		FAC4BFA51F90F96B0008842A /* Decker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BFA01F90F96B0008842A /* Decker.swift */; };
+		FAC4BFA61F90F96B0008842A /* SingleDecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BFA11F90F96B0008842A /* SingleDecker.swift */; };
+		FAC4BFA71F90F96B0008842A /* ThreeDecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BFA21F90F96B0008842A /* ThreeDecker.swift */; };
+		FAC4BFA81F90F96B0008842A /* FourDecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BFA31F90F96B0008842A /* FourDecker.swift */; };
+		FAC4BFAB1F90FEAF0008842A /* DeckerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4BFAA1F90FEAF0008842A /* DeckerUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC4BF801F90F6D60008842A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC4BF631F90F6D60008842A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC4BF6A1F90F6D60008842A;
+			remoteInfo = DeckerWar;
+		};
+		FAC4BF8B1F90F6D60008842A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC4BF631F90F6D60008842A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC4BF6A1F90F6D60008842A;
+			remoteInfo = DeckerWar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0CA1C61F9123F4002E291D /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		FAC4BF6B1F90F6D60008842A /* DeckerWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckerWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC4BF6E1F90F6D60008842A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC4BF701F90F6D60008842A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC4BF731F90F6D60008842A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC4BF751F90F6D60008842A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC4BF781F90F6D60008842A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC4BF7A1F90F6D60008842A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC4BF7F1F90F6D60008842A /* DeckerWarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckerWarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC4BF831F90F6D60008842A /* DeckerWarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckerWarTests.swift; sourceTree = "<group>"; };
+		FAC4BF851F90F6D60008842A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC4BF8A1F90F6D60008842A /* DeckerWarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckerWarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC4BF8E1F90F6D60008842A /* DeckerWarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckerWarUITests.swift; sourceTree = "<group>"; };
+		FAC4BF901F90F6D60008842A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC4BF9D1F90F8D50008842A /* DeckerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckerGenerator.swift; sourceTree = "<group>"; };
+		FAC4BF9F1F90F96B0008842A /* DoubleDecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleDecker.swift; sourceTree = "<group>"; };
+		FAC4BFA01F90F96B0008842A /* Decker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decker.swift; sourceTree = "<group>"; };
+		FAC4BFA11F90F96B0008842A /* SingleDecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDecker.swift; sourceTree = "<group>"; };
+		FAC4BFA21F90F96B0008842A /* ThreeDecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDecker.swift; sourceTree = "<group>"; };
+		FAC4BFA31F90F96B0008842A /* FourDecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourDecker.swift; sourceTree = "<group>"; };
+		FAC4BFAA1F90FEAF0008842A /* DeckerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckerUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC4BF681F90F6D60008842A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF7C1F90F6D60008842A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF871F90F6D60008842A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0CA1C91F912E72002E291D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF9D1F90F8D50008842A /* DeckerGenerator.swift */,
+				FAC4BFAA1F90FEAF0008842A /* DeckerUtils.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA0CA1CA1F912E82002E291D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CA1C61F9123F4002E291D /* Area.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA0CA1CB1F912EB5002E291D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF701F90F6D60008842A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAC4BF621F90F6D60008842A = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF6D1F90F6D60008842A /* DeckerWar */,
+				FAC4BF821F90F6D60008842A /* DeckerWarTests */,
+				FAC4BF8D1F90F6D60008842A /* DeckerWarUITests */,
+				FAC4BF6C1F90F6D60008842A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC4BF6C1F90F6D60008842A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF6B1F90F6D60008842A /* DeckerWar.app */,
+				FAC4BF7F1F90F6D60008842A /* DeckerWarTests.xctest */,
+				FAC4BF8A1F90F6D60008842A /* DeckerWarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC4BF6D1F90F6D60008842A /* DeckerWar */ = {
+			isa = PBXGroup;
+			children = (
+				FA0CA1CB1F912EB5002E291D /* Controller */,
+				FA0CA1CA1F912E82002E291D /* View */,
+				FA0CA1C91F912E72002E291D /* Service */,
+				FAC4BFA91F90FB590008842A /* Model */,
+				FAC4BF6E1F90F6D60008842A /* AppDelegate.swift */,
+				FAC4BF721F90F6D60008842A /* Main.storyboard */,
+				FAC4BF751F90F6D60008842A /* Assets.xcassets */,
+				FAC4BF771F90F6D60008842A /* LaunchScreen.storyboard */,
+				FAC4BF7A1F90F6D60008842A /* Info.plist */,
+			);
+			path = DeckerWar;
+			sourceTree = "<group>";
+		};
+		FAC4BF821F90F6D60008842A /* DeckerWarTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF831F90F6D60008842A /* DeckerWarTests.swift */,
+				FAC4BF851F90F6D60008842A /* Info.plist */,
+			);
+			path = DeckerWarTests;
+			sourceTree = "<group>";
+		};
+		FAC4BF8D1F90F6D60008842A /* DeckerWarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BF8E1F90F6D60008842A /* DeckerWarUITests.swift */,
+				FAC4BF901F90F6D60008842A /* Info.plist */,
+			);
+			path = DeckerWarUITests;
+			sourceTree = "<group>";
+		};
+		FAC4BFA91F90FB590008842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4BFA01F90F96B0008842A /* Decker.swift */,
+				FAC4BF9F1F90F96B0008842A /* DoubleDecker.swift */,
+				FAC4BFA31F90F96B0008842A /* FourDecker.swift */,
+				FAC4BFA11F90F96B0008842A /* SingleDecker.swift */,
+				FAC4BFA21F90F96B0008842A /* ThreeDecker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC4BF6A1F90F6D60008842A /* DeckerWar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC4BF931F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWar" */;
+			buildPhases = (
+				FAC4BF671F90F6D60008842A /* Sources */,
+				FAC4BF681F90F6D60008842A /* Frameworks */,
+				FAC4BF691F90F6D60008842A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeckerWar;
+			productName = DeckerWar;
+			productReference = FAC4BF6B1F90F6D60008842A /* DeckerWar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC4BF7E1F90F6D60008842A /* DeckerWarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC4BF961F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWarTests" */;
+			buildPhases = (
+				FAC4BF7B1F90F6D60008842A /* Sources */,
+				FAC4BF7C1F90F6D60008842A /* Frameworks */,
+				FAC4BF7D1F90F6D60008842A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC4BF811F90F6D60008842A /* PBXTargetDependency */,
+			);
+			name = DeckerWarTests;
+			productName = DeckerWarTests;
+			productReference = FAC4BF7F1F90F6D60008842A /* DeckerWarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC4BF891F90F6D60008842A /* DeckerWarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC4BF991F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWarUITests" */;
+			buildPhases = (
+				FAC4BF861F90F6D60008842A /* Sources */,
+				FAC4BF871F90F6D60008842A /* Frameworks */,
+				FAC4BF881F90F6D60008842A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC4BF8C1F90F6D60008842A /* PBXTargetDependency */,
+			);
+			name = DeckerWarUITests;
+			productName = DeckerWarUITests;
+			productReference = FAC4BF8A1F90F6D60008842A /* DeckerWarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC4BF631F90F6D60008842A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = vitalii;
+				TargetAttributes = {
+					FAC4BF6A1F90F6D60008842A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					FAC4BF7E1F90F6D60008842A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC4BF6A1F90F6D60008842A;
+					};
+					FAC4BF891F90F6D60008842A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC4BF6A1F90F6D60008842A;
+					};
+				};
+			};
+			buildConfigurationList = FAC4BF661F90F6D60008842A /* Build configuration list for PBXProject "DeckerWar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC4BF621F90F6D60008842A;
+			productRefGroup = FAC4BF6C1F90F6D60008842A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC4BF6A1F90F6D60008842A /* DeckerWar */,
+				FAC4BF7E1F90F6D60008842A /* DeckerWarTests */,
+				FAC4BF891F90F6D60008842A /* DeckerWarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC4BF691F90F6D60008842A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC4BF791F90F6D60008842A /* LaunchScreen.storyboard in Resources */,
+				FAC4BF761F90F6D60008842A /* Assets.xcassets in Resources */,
+				FAC4BF741F90F6D60008842A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF7D1F90F6D60008842A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF881F90F6D60008842A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC4BF671F90F6D60008842A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0CA1C71F9123F4002E291D /* Area.swift in Sources */,
+				FAC4BF711F90F6D60008842A /* ViewController.swift in Sources */,
+				FAC4BFA61F90F96B0008842A /* SingleDecker.swift in Sources */,
+				FAC4BF9E1F90F8D50008842A /* DeckerGenerator.swift in Sources */,
+				FAC4BFA41F90F96B0008842A /* DoubleDecker.swift in Sources */,
+				FAC4BFA71F90F96B0008842A /* ThreeDecker.swift in Sources */,
+				FAC4BFA81F90F96B0008842A /* FourDecker.swift in Sources */,
+				FAC4BFAB1F90FEAF0008842A /* DeckerUtils.swift in Sources */,
+				FAC4BF6F1F90F6D60008842A /* AppDelegate.swift in Sources */,
+				FAC4BFA51F90F96B0008842A /* Decker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF7B1F90F6D60008842A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC4BF841F90F6D60008842A /* DeckerWarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC4BF861F90F6D60008842A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC4BF8F1F90F6D60008842A /* DeckerWarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC4BF811F90F6D60008842A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC4BF6A1F90F6D60008842A /* DeckerWar */;
+			targetProxy = FAC4BF801F90F6D60008842A /* PBXContainerItemProxy */;
+		};
+		FAC4BF8C1F90F6D60008842A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC4BF6A1F90F6D60008842A /* DeckerWar */;
+			targetProxy = FAC4BF8B1F90F6D60008842A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC4BF721F90F6D60008842A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC4BF731F90F6D60008842A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC4BF771F90F6D60008842A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC4BF781F90F6D60008842A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC4BF911F90F6D60008842A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC4BF921F90F6D60008842A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC4BF941F90F6D60008842A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC4BF951F90F6D60008842A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAC4BF971F90F6D60008842A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckerWar.app/DeckerWar";
+			};
+			name = Debug;
+		};
+		FAC4BF981F90F6D60008842A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckerWar.app/DeckerWar";
+			};
+			name = Release;
+		};
+		FAC4BF9A1F90F6D60008842A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeckerWar;
+			};
+			name = Debug;
+		};
+		FAC4BF9B1F90F6D60008842A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeckerWarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SDARM.DeckerWarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeckerWar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC4BF661F90F6D60008842A /* Build configuration list for PBXProject "DeckerWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC4BF911F90F6D60008842A /* Debug */,
+				FAC4BF921F90F6D60008842A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC4BF931F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC4BF941F90F6D60008842A /* Debug */,
+				FAC4BF951F90F6D60008842A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC4BF961F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC4BF971F90F6D60008842A /* Debug */,
+				FAC4BF981F90F6D60008842A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC4BF991F90F6D60008842A /* Build configuration list for PBXNativeTarget "DeckerWarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC4BF9A1F90F6D60008842A /* Debug */,
+				FAC4BF9B1F90F6D60008842A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC4BF631F90F6D60008842A /* Project object */;
+}
